@@ -11,7 +11,7 @@ const getEvents = async ()=>{
 const Events = async() => {
     const event = await getEvents();
     
-  return <section className="section" id="tour">
+  return <section className="section" id="tours">
     <div className="container mx-auto text-white">
         {/* event box */}
         <SectionHeader pretitle={'World Tour'} title={'Upcoming Events'}/>
