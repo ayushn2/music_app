@@ -34,18 +34,18 @@ const Header = () => {
       active?
       'bg-[#030315] py-6 ' 
       : 'bg-transparent py-8 '}`}>
-      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         
-        <Link href={'#'} className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'>
+        <Link href={'#'} className='relative flex w-[226px] h-[37.64px] transition-all mb-4 lg:mb-0'>
           <Image src={'/assets/header/logo.svg'} fill priority alt=''/>
         </Link>
         {/* nav */}
-        <Nav containerStyles='hidden xl:flex items-center gap-x-8'/>
+        <Nav containerStyles='hidden lg:flex items-center gap-x-8'/>
         {/* nav mobile*/}
         
         <NavMobile/>
         {/* menu btn */}
-        <div className='absolute right-7 top-9 z-10 xl:hidden'>
+        <div className='absolute right-7 top-9 z-10 lg:hidden'>
           <MenuBtn/>
         </div>
         

@@ -30,6 +30,23 @@
   }
 }
 
+::-webkit-scrollbar{
+  width:2px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.23);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb{
+  background: white;
+  height: 10%;
+}
+
 body{
   @apply bg-primary font-montserrat text-white;
 }

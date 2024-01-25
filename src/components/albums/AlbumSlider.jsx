@@ -45,7 +45,7 @@ const AlbumSlider = () => {
       }}
       className="album-slider">
         {data.map((album)=>{
-            console.log(album)
+            
             return (
                 <SwiperSlide key={album.id} className="mb-12">
                     <div className="w-full bg-[#151538]/80 rounded-[10px] flex flex-col xl:flex-row items-center p-6 xl:p-12 gap-x-12">

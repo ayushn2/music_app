@@ -13,7 +13,7 @@ const NavMobile = () => {
   return (
     <nav 
     className={`${isOpen?'right-0':'-right-full'} 
-          xl:hidden fixed bg-accent w-full top-0 z-20 bottom-0 transition-all duration-500`}
+          lg:hidden fixed bg-accent w-full top-0 z-20 bottom-0 transition-all duration-500`}
           >
       <div 
       

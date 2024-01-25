@@ -4,14 +4,21 @@ import Hero from "@/components/Hero";
 import Player from "@/components/Player";
 import Contact from "@/components/Contact";
 import Albums from "@/components/albums/Albums";
+import Blog from "@/components/blog/Blog";
+import Newsletter from "@/components/events/Newsletter";
 
 export default function Home() {
   return (
-   <div>
-      <Hero/>
-      <Player/>
-      <Events/>
-      <Albums/>
-    </div>
+    <main>
+
+        <Hero/>
+        <Player/>
+        <Events/>
+        <Albums/>
+        <Blog/>
+        <Newsletter/>
+        
+    </main>
+   
   )
 }
