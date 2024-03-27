@@ -9,21 +9,21 @@ import { AudioPlayer } from "react-audio-play"
 
 import {Swiper,SwiperSlide,useSwiperSlide} from "swiper/react"
 import {EffectCoverflow,FreeMode,Navigation,Thumbs} from "swiper/modules"
-
+import { data } from "../../../data"
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
-import { data } from "autoprefixer"
 
 const fetcher = (url)=>fetch(url).then((res)=>res.json())
 
 const AlbumSlider = () => {
 
   const [thumbsSwiper,setThumbsSwiper] = useState(null)
-  const {data,error} = useSWR('http://localhost:4000/albums',fetcher);
-  if(error) return 'Failed to fetch data';
-  if (!data) return 'Loading...';
+//   const {data,error} = useSWR('http://localhost:4000/albums',fetcher);
+//   if(error) return 'Failed to fetch data';
+//   if (!data) return 'Loading...';
 
+    const albums = data.albums;
   
   return (
     <>
@@ -44,7 +44,7 @@ const AlbumSlider = () => {
         slideShadows:true,
       }}
       className="album-slider">
-        {data.map((album)=>{
+        {albums.map((album)=>{
             
             return (
                 <SwiperSlide key={album.id} className="mb-12">
@@ -127,7 +127,7 @@ const AlbumSlider = () => {
       watchSlidesProgress={true}
       className="thumb-slider"
       >
-        {data?.map((thumb,index)=>{
+        {albums?.map((thumb,index)=>{
             return (
             <SwiperSlide key={index} className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]">
                 <div className="relative w-[195px] h-[195px] sm:w-[360px] sm:h-[360px] md:w-[240px] md:max-h-[240px] cursor-pointer">
