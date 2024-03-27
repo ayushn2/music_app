@@ -20,7 +20,7 @@ const Footer = () => {
         >
           <Link href="#">
             <h2 className="text-[24px] lg:text-[38px] font-semibold leading-tight">
-              iayush.n2@gamil.com
+              iayush.n2@gmail.com
             </h2>
           </Link>
         </motion.div>
